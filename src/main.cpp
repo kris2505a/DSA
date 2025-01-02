@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Searching and Sorting/Searching.h"
+#include "Searching and Sorting/Sorting.h"
 
 int main() {
 
@@ -9,12 +10,12 @@ int main() {
 	for (auto& element : list) {
 		std::cin >> element;
 	}
-	int x;
-	std::cin >> x;
-	auto index = DSA::binarySearch(list, x);
-	if (index == -1)
-		std::cout << "Element not found" << std::endl;
-	else
-		std::cout << "Element found at index: " << index << std::endl;
+
+	DSA::selectionSort(list);
+
+	for (auto& i : list) {
+		std::cout << i << " ";
+	}
+	std::cout << std::endl;	
 
 }
