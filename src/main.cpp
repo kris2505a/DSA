@@ -11,7 +11,7 @@ int main() {
 		std::cin >> element;
 	}
 
-	DSA::selectionSort(list);
+	DSA::insertionSort(list);
 
 	for (auto& i : list) {
 		std::cout << i << " ";
